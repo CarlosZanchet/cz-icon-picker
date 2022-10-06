@@ -39,7 +39,7 @@ Componente de seleção e renderização de ícones baseado no Font-Awesome.
 
 #### Icon
 
-| Parâmetro   | Tipo       | Descrição                                   |
+| Propriedade   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
 | `icon`      | `string` |  Nome do ícone |
 | `size?`      | `number` |  Tamanho do ícone em unidade rem|
