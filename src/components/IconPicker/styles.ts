@@ -60,6 +60,7 @@ export const LabelItem = styled.span`
 export const ContentIconSelect = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
@@ -68,3 +69,11 @@ export const IconSelect = styled.span`
   font-size: 4rem;
   margin-top: 1rem;
 `;
+
+export const BtnSelecionar = styled.button`
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+`;
+

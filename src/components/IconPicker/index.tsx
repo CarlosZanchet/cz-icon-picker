@@ -2,6 +2,7 @@ import { ChangeEventHandler, createElement, useState } from "react";
 import { IconType } from "../../types/IconType";
 import { iconFaList } from "../../utils/FaIconsList";
 import {
+  BtnSelecionar,
   ContainerIcons,
   ContentFilter,
   ContentIconSelect,
@@ -12,7 +13,11 @@ import {
   LabelItem,
 } from "./styles";
 
-const IconPicker = () => {
+interface IconPickerProps {
+    onChange: (icon: string) => void;
+}
+
+const IconPicker = ({ onChange }: IconPickerProps) => {
   const [iconsFa, setIconsFa] = useState(iconFaList);
   const [iconSelected, setIconSelected] = useState<IconType>();
 
@@ -23,12 +28,21 @@ const IconPicker = () => {
     setIconsFa(listFilterIcons);
   }
 
+  function handleChangeIcon() {
+    if(iconSelected) {
+      onChange(iconSelected?.label)
+    }
+  }
+
   return (
     <>
       <ContentFilter>
         <ContentIconSelect>
           {iconSelected && (
-            <IconSelect>{createElement(iconSelected.icon)}</IconSelect>
+            <>
+              <IconSelect>{createElement(iconSelected.icon)}</IconSelect>
+              <BtnSelecionar onClick={handleChangeIcon}>Selecionar</BtnSelecionar>
+            </>
           )}
         </ContentIconSelect>
         <FindIcon
