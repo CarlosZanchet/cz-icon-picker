@@ -1,14 +1,14 @@
 {
   "name": "cz-icon-picker",
   "private": false,
-  "version": "0.0.6",
-  "type": "module",
+  "version": "0.0.12",
   "prepublish": "tsc",
   "scripts": {
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "dev": "vite"
   },
   "peerDependencies": {
     "react": "^18.2.0",
@@ -46,7 +46,7 @@
   "description": "Componente de seleção de ícones dinamicamente",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
+  "types": "./dist/esm/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CarlosZanchet/cz-icon-picker.git"

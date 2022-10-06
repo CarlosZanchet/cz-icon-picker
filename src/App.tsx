@@ -1,7 +1,14 @@
+import IconPicker from "./components/IconPicker";
+import { ModalTest, Content } from "./styles";
+
 function App() {
 
   return (
-    <h1>heelo</h1>
+    <Content>
+      <ModalTest>
+      <IconPicker />
+    </ModalTest>
+    </Content>
   )
 }
 

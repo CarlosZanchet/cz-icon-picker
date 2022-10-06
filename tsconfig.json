@@ -14,9 +14,9 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "declaration": true,
   },
-  "declaration": true,
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

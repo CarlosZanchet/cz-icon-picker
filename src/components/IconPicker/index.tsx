@@ -3,6 +3,7 @@ import { IconType } from "../../types/IconType";
 import { iconFaList } from "../../utils/FaIconsList";
 import {
   ContainerIcons,
+  ContentFilter,
   ContentIconSelect,
   FindIcon,
   Icon,
@@ -24,13 +25,17 @@ const IconPicker = () => {
 
   return (
     <>
-      <ContentIconSelect>
-        {iconSelected && <IconSelect>{createElement(iconSelected.icon)}</IconSelect>}
-      </ContentIconSelect>
-      <FindIcon
-        placeholder="Buscar Ícones"
-        onChange={(event) => handleFindIcon(event.target.value)}
-      />
+      <ContentFilter>
+        <ContentIconSelect>
+          {iconSelected && (
+            <IconSelect>{createElement(iconSelected.icon)}</IconSelect>
+          )}
+        </ContentIconSelect>
+        <FindIcon
+          placeholder="Buscar Ícones"
+          onChange={(event) => handleFindIcon(event.target.value)}
+        />
+      </ContentFilter>
       <ContainerIcons>
         {iconsFa.map((icon) => (
           <Item key={icon.label} onClick={() => setIconSelected(icon)}>
@@ -41,6 +46,6 @@ const IconPicker = () => {
       </ContainerIcons>
     </>
   );
-}
+};
 
-export default IconPicker
+export default IconPicker;
