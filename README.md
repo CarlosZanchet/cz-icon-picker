@@ -6,6 +6,10 @@ Componente de seleção e renderização de ícones baseado no Font-Awesome.
 
 
 
+## Stack utilizada
+
+**Front-end:** React, Typescript, styled-componentes
+
 ## Funcionalidades
 
 - Listagem de Ícones (Font-Awesome)
@@ -61,3 +65,5 @@ function App() {
 
 export default App;
 ```
+
+
