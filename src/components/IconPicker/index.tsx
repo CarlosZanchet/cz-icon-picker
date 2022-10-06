@@ -11,7 +11,7 @@ import {
   LabelItem,
 } from "./styles";
 
-export function IconPicker() {
+export default function IconPicker() {
   const [iconsFa, setIconsFa] = useState(iconFaList);
   const [iconSelected, setIconSelected] = useState<IconType>();
 
