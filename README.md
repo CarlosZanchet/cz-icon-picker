@@ -1,5 +1,5 @@
 
-# Icon Picker
+# ✔️✔️ Icon Picker
 
 Componente de seleção e renderização de ícones baseado no Font-Awesome.
 
@@ -10,7 +10,7 @@ Componente de seleção e renderização de ícones baseado no Font-Awesome.
 
 **Front-end:** ⚛️React, Typescript, styled-componentes
 
-## Funcionalidades
+## 🛠️ Funcionalidades
 
 - Listagem de Ícones (Font-Awesome)
 - Seleção e renderização através do nome
@@ -19,9 +19,10 @@ Componente de seleção e renderização de ícones baseado no Font-Awesome.
 ## Autores
 
 - [@CarlosZanchet](https://www.github.com/CarlosZanchet)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlos-zanchet-0a6ab016a/)
 
 
-## Instalação
+## 🖥️ Instalação
 
 
 ```bash
