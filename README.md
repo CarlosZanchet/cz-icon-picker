@@ -35,7 +35,7 @@ Componente de seleção e renderização de ícones baseado no Font-Awesome.
 
 | Propriedade   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
-| `onChange` | `function(icon: string) => void` | **Obrigatório**. função que retorna o ícone selecionado. |
+| `onChange` | `function(icon: string) => void` | Função que retorna o ícone selecionado. |
 
 #### Icon
 
