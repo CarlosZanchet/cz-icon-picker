@@ -8,7 +8,7 @@ Componente de seleção e renderização de ícones baseado no Font-Awesome.
 
 ## Stack utilizada
 
-**Front-end:** React, Typescript, styled-componentes
+**Front-end:** ⚛️React, Typescript, styled-componentes
 
 ## Funcionalidades
 
