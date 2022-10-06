@@ -1,12 +1,13 @@
 {
   "name": "cz-icon-picker",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
+  "prepublish": "tsc",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
   },
   "peerDependencies": {
     "react": "^18.2.0",
@@ -23,9 +24,22 @@
     "typescript": "^4.6.4",
     "vite": "^3.1.0"
   },
-  "keywords": ["icone", "icon", "picker", "picker-icon", "select-icon", "react", "ts", "typescript", "styled-components", "react-icons"],
+  "keywords": [
+    "icone",
+    "icon",
+    "picker",
+    "picker-icon",
+    "select-icon",
+    "react",
+    "ts",
+    "typescript",
+    "styled-components",
+    "react-icons"
+  ],
   "description": "Componente de seleção de ícones dinamicamente",
-  "main": "App.tsx",
+  "main": "./dist/cjs/index.js", 
+  "module": "./dist/esm/index.js", 
+  "types": "./dist/esm/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CarlosZanchet/cz-icon-picker.git"

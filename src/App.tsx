@@ -1,9 +1,7 @@
-import { useState } from 'react'
-import { IconPicker } from './components/IconPicker'
 function App() {
 
   return (
-    <IconPicker />
+    <h1>heelo</h1>
   )
 }
 
