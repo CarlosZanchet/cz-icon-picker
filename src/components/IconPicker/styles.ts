@@ -30,21 +30,23 @@ export const FindIcon = styled.input`
 export const ContainerIcons = styled.div`
   display: flex;
   justify-content: center;
+  align-content: flex-start;
   height: 100%;
   flex-wrap: wrap;
-  grid-auto-columns: auto;
-  grid-row: auto;
   gap: 4px;
   overflow-y: scroll;
-  height: 31rem;
+  height: 100vh;
+  max-height: 31rem;
   overflow: auto;
   position: relative;
+
 `;
 
 export const Item = styled.div`
-  padding: 1rem;
+  padding: 0.5rem 0rem;
   width: 100%;
   max-width: 150px;
+  height: 50px;
   overflow: hidden;
   border: 1px solid gray;
   display: flex;
@@ -61,8 +63,6 @@ export const Item = styled.div`
     color: #2a2a2a;
   }
 `;
-
-export const Icon = styled.span``;
 
 export const LabelItem = styled.span`
   font-size: 0.8rem;
@@ -96,3 +96,23 @@ export const BtnSelecionar = styled.button`
   }
 `;
 
+export const ContentLoading = styled.div`
+  @keyframes gira {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+
+
+  svg {
+    animation: gira 1.5s linear infinite;
+  }
+`;
