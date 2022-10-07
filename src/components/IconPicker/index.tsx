@@ -3,16 +3,19 @@ import { IconType } from "../../types/IconType";
 import { iconFaList } from "../../utils/FaIconsList";
 import Icon from "../Icon";
 import {
+  Blank,
   BtnSelecionar,
   ContainerIcons,
   Content,
   ContentFilter,
   ContentIconSelect,
   ContentLoading,
+  Description,
   FindIcon,
   IconSelect,
   Item,
   LabelItem,
+  Ops,
 } from "./styles";
 
 interface IconPickerProps {
@@ -23,9 +26,9 @@ const IconPicker = ({ onChange }: IconPickerProps) => {
   const [iconsFa, setIconsFa] = useState(iconFaList);
   const [loadingIcons, setLoadingIcons] = useState(false);
   const [iconSelected, setIconSelected] = useState<IconType>();
-  
+
   let timer: NodeJS.Timeout;
-  
+
   function handleChangeIcon() {
     if (iconSelected) {
       onChange(iconSelected?.label);
@@ -45,15 +48,16 @@ const IconPicker = ({ onChange }: IconPickerProps) => {
     timer = newTimer;
   }
 
-
-
   return (
     <Content>
       <ContentFilter>
         <ContentIconSelect>
           {iconSelected && (
             <>
-              <IconSelect>{createElement(iconSelected.icon)}</IconSelect>
+              <IconSelect>
+                {createElement(iconSelected.icon)}{" "}
+                <strong>{iconSelected.label}</strong>
+              </IconSelect>
               <BtnSelecionar onClick={handleChangeIcon}>
                 Selecionar
               </BtnSelecionar>
@@ -79,6 +83,15 @@ const IconPicker = ({ onChange }: IconPickerProps) => {
               </Item>
             ))}
           </>
+        )}
+        {iconsFa.length <= 0 && (
+          <Blank>
+            <Icon icon="FaGhost" size={4} />
+            <Ops>Ops, nada encontrado por aqui!</Ops>
+            <Description>
+              Verifique os filtro utilizados, ou utilize outras palavras chave.
+            </Description>
+          </Blank>
         )}
       </ContainerIcons>
     </Content>

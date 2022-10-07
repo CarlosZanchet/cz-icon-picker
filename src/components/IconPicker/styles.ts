@@ -43,10 +43,9 @@ export const ContainerIcons = styled.div`
 `;
 
 export const Item = styled.div`
-  padding: 0.5rem 0rem;
   width: 100%;
   max-width: 150px;
-  height: 50px;
+  height: 65px;
   overflow: hidden;
   border: 1px solid gray;
   display: flex;
@@ -79,6 +78,15 @@ export const ContentIconSelect = styled.div`
 export const IconSelect = styled.span`
   font-size: 4rem;
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.7rem;
+
+  strong {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+  }
 `;
 
 export const BtnSelecionar = styled.button`
@@ -106,8 +114,6 @@ export const ContentLoading = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0;
-  flex: 1;
   width: 100%;
   height: 100%;
 
@@ -115,4 +121,23 @@ export const ContentLoading = styled.div`
   svg {
     animation: gira 1.5s linear infinite;
   }
+`;
+
+export const Blank = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 0.2rem;
+`;
+
+export const Ops = styled.span`
+  font-size: 1rem;
+  font-weight: bold;
+`;
+
+export const Description = styled.span`
+  font-size: 0.75rem;
 `;
