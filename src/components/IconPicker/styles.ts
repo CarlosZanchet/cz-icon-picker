@@ -78,6 +78,7 @@ export const ContentIconSelect = styled.div`
 export const IconSelect = styled.span`
   font-size: 4rem;
   margin-top: 1rem;
+  color: #343434;
 `;
 
 export const BtnSelecionar = styled.button`
@@ -88,6 +89,7 @@ export const BtnSelecionar = styled.button`
   font-weight: bold;
   transition: filter 200ms;
   border-radius: 4px;
+  padding: 0.2rem 0.5rem;
 
   :hover {
     filter: contrast(0.8);
