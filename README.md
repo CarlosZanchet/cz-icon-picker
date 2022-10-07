@@ -15,6 +15,12 @@ Componente de seleção e renderização de ícones baseado no Font-Awesome.
 
 ![App Screenshot](https://uploaddeimagens.com.br/images/004/052/947/original/icon-picker.png?1665143571)
 
+- Exemplo de utilização em aplicação
+
+![App Screenshot](https://uploaddeimagens.com.br/images/004/053/855/full/conpicker2.png?1665167829)
+
+
+
 - A estilização do componente fica a cargo do componente da aplicação que vai utiliza-lo, dando mais dinamiso para como trabalhar com o componente.
 
 ## 🛠️ Funcionalidades
