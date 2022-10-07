@@ -78,7 +78,6 @@ export const ContentIconSelect = styled.div`
 export const IconSelect = styled.span`
   font-size: 4rem;
   margin-top: 1rem;
-  color: #343434;
 `;
 
 export const BtnSelecionar = styled.button`
