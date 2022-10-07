@@ -25,7 +25,7 @@ Componente de seleção e renderização de ícones baseado no Font-Awesome.
 
 
 ```bash
-  npm install cz-icon-picker
+  npm i icon-picker-react
 ```
 
 
@@ -51,7 +51,7 @@ Componente de seleção e renderização de ícones baseado no Font-Awesome.
 
 ```javascript
 import { useState } from "react";
-import { IconPicker, Icon } from "cz-icon-picker";
+import { IconPicker, Icon } from "icon-picker-react";
 
 function App() {
   const [iconLabel, setIconLabel] = useState('')
