@@ -6,7 +6,6 @@ function App() {
   const [iconLabel, setIconLabel] = useState('')
   return (
     <>
-      <span>icone: <Icon size={1.8} color="red" icon={iconLabel} /> </span>
       <span>
         <IconPicker onChange={setIconLabel} />
       </span>

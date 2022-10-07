@@ -77,7 +77,6 @@ export const ContentIconSelect = styled.div`
 
 export const IconSelect = styled.span`
   font-size: 4rem;
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
