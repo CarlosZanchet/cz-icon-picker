@@ -45,6 +45,7 @@ export const Item = styled.div`
   padding: 1rem;
   width: 100%;
   max-width: 150px;
+  overflow: hidden;
   border: 1px solid gray;
   display: flex;
   flex-direction: column;
