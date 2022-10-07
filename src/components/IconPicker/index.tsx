@@ -4,6 +4,7 @@ import { iconFaList } from "../../utils/FaIconsList";
 import {
   BtnSelecionar,
   ContainerIcons,
+  Content,
   ContentFilter,
   ContentIconSelect,
   FindIcon,
@@ -35,7 +36,7 @@ const IconPicker = ({ onChange }: IconPickerProps) => {
   }
 
   return (
-    <>
+    <Content>
       <ContentFilter>
         <ContentIconSelect>
           {iconSelected && (
@@ -58,7 +59,7 @@ const IconPicker = ({ onChange }: IconPickerProps) => {
           </Item>
         ))}
       </ContainerIcons>
-    </>
+    </Content>
   );
 };
 

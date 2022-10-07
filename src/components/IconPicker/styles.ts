@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const Content = styled.input`
-  display: flex;
+export const Content = styled.div`
+  position: relative;
+  overflow: hidden;
 `;
 
 export const ContentFilter = styled.div`
@@ -10,6 +11,7 @@ export const ContentFilter = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 `;
 
 export const FindIcon = styled.input`
@@ -20,15 +22,23 @@ export const FindIcon = styled.input`
   font-size: 0.8rem;
   margin: 0.5rem 0rem;
   max-width: 70%;
+  border-radius: 0;
+  outline: none;
+  color: #767676;
 `;
 
 export const ContainerIcons = styled.div`
   display: flex;
   justify-content: center;
+  height: 100%;
   flex-wrap: wrap;
   grid-auto-columns: auto;
   grid-row: auto;
   gap: 4px;
+  overflow-y: scroll;
+  height: 31rem;
+  overflow: auto;
+  position: relative;
 `;
 
 export const Item = styled.div`
@@ -71,9 +81,16 @@ export const IconSelect = styled.span`
 `;
 
 export const BtnSelecionar = styled.button`
-  background: transparent;
+  background: #d5d5d5;
+  color: #343434;
   border: 0;
   cursor: pointer;
   font-weight: bold;
+  transition: filter 200ms;
+  border-radius: 4px;
+
+  :hover {
+    filter: contrast(0.8);
+  }
 `;
 

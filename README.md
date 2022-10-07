@@ -10,6 +10,13 @@ Componente de seleção e renderização de ícones baseado no Font-Awesome.
 
 **Front-end:** ⚛️React, Typescript, styled-componentes
 
+
+## Screenshots
+
+![App Screenshot](https://uploaddeimagens.com.br/images/004/052/947/original/icon-picker.png?1665143571)
+
+- A estilização do componente fica a cargo do componente da aplicação que vai utiliza-lo, dando mais dinamiso para como trabalhar com o componente.
+
 ## 🛠️ Funcionalidades
 
 - Listagem de Ícones (Font-Awesome)
